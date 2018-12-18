@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>In Move</title>
+
+	<meta name="description" content="Latter of Credit using blockchain">
+	<meta name="author" content="Karen Hovhannisyan">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="dist/ladda.min.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" type="text/css" href="https://codepen.io/chriddyp/pen/bWLwgP.css">
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+	<link rel="stylesheet" href="/css/print/pdf.css">
+	<!-- <link rel="stylesheet" href="css/theme/league.css" id="theme"> -->
+	
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+
+	<div class="slides">
+		<!-- Start of the project slide -->
+
+		<section data-background="white">
+			<img class="plain" style="background: transparent" src="icons/logo.jpg">
+			<p style="position: fixed; bottom: 0; width:100%; text-align: right;"><small>19 Dec 2018</small></p>
+		</section>
+
+		<section>
+			<h2 style="text-transform: none; text-align: left;">Problem</h2>
+			<div class="twelve columns" style="text-align: center;">
+
+					<div style="float: left;" class="two columns">
+						<img class="plain fragment grow" width="100" height="100" style="background: transparent;" src="icons/CO2.png">
+					</div>
+					<div class="four columns">
+						<small style="text-align: left;">Environmental Harm</small> <br>	
+						<small style="font-size: 40%; text-align: left;">obsolete imported cars with high CO2 emissions</small>
+					</div>
+					
+					<div style="float: right;" class="four columns">
+						<small style="text-align: left;">Urban Transport</small>
+						 <br>	
+						<small style="font-size: 42%; text-align: left;">longer commuting, inconvenience</small>
+
+					</div>
+					<div style="float: right;" class="two columns">
+						<img class="plain fragment grow" width="100" height="100" style="background: transparent;" src="icons/traffic.png">
+					</div>
+					
+			</div>
+			<div class="twelve columns" style="text-align: center;">
+
+					<div style="float: left;" class="two columns">
+						<img class="plain fragment grow" width="100" height="100" style="background: transparent;" src="icons/bureaucracy.png">
+					</div>
+					<div style="float: left;" class="four columns">
+						<small style="text-align: right;">Bureaucracy</small>
+						 <br>	
+						<small style="font-size: 42%; text-align: left;">number of required documents, mandatory pledge and office visits</small>
+					</div>
+					
+					<div style="float: right;" class="four columns">
+						<small style="text-align: left;">Maintenance</small>
+						 <br>	
+						<small style="font-size: 42%; text-align: left;">time consuming and money spending <br> on ad hoc staff</small>
+
+					</div>
+					<div style="float: right;" class="two columns">
+						<img class="plain fragment grow" width="100" height="100" style="background: transparent;" src="icons/maintenance.png">
+					</div>
+					
+			</div>
+		</section>
+
+		<section>
+			<section>
+			<h2 style="text-transform: none; text-align: left;">Solution</h2>
+			<small style="text-align: left;">Free-floating car sharing: <span class="fragment">a short-term car rental. Where a user registers through Mobile App or Website by providing scans of Passport, Driving License and Credit Card.</span></small> <br><br>
+			<ul class="fragment" style="font-size: 65%; text-align: left;">
+				<li class="fragment highlight-current-green">environmentally friendly cars</li>
+				<li class="fragment highlight-current-green">alternative for an active lifestyle pursuer</li>
+				<li class="fragment highlight-current-green">easy to rent, no need to visit the office</li>
+				<li class="fragment highlight-current-green">24/7 availability</li>
+				<li class="fragment highlight-current-green">zero maintenance cost</li>
+			</ul>
+
+			</section>
+
+			<!-- how it works -->
+			<section data-background="white"><h2>How it works?</h2></section>
+			<section data-background=url(icons/map.jpg) data-background-size="cover">
+				
+				<div class="twelve columns loading_ladda" style="position: absolute; height: 75px; z-index: 5 "></div>
+				<div class="twelve columns" style="float: left; margin-left: 50px;">
+					<div dir="rtl" class="progress-demo"  style="float: left; margin: 10px;z-index: 1">
+						
+					</div>
+					<!-- <div dir="rtl" class="progress-demo"  style="float: left; margin: 10px">
+						<small style="font-size: 50%" class="fragment" data-fragment-index="1">Smart<br>Contract</small><br>
+						<button class="ladda-button" data-color="mint" data-style="expand-left" data-size="l" style="height: 50px; width:200px;border-radius: 16px;"> <small>Seller</small></button><br>
+						<small style="font-size: 50%" class="fragment" data-fragment-index="5">Received Payment</small>
+					</div>
+					 -->
+				</div>
+			</section>
+			<section section data-background=url(icons/map_user.jpg) data-background-size="cover">
+				<div class="twelve columns loading_ladda" style="position: absolute; height: 75px; z-index: 5"></div>
+				<div class="twelve columns" style="float: left; margin-left: 50px;">
+					<div dir="rtl" class="progress-demo"  style="float: left; margin: 10px;z-index: 1"></div>
+					
+				</div>
+			</section>
+
+			<section data-background=#322c2c>
+				<div class="twelve columns loading_ladda" style="position: absolute; height: 75px; z-index: 5"></div>
+				<div class="twelve columns" style="float: left; margin-left: 50px;">
+					<div dir="rtl" class="progress-demo"  style="float: left; margin: 10px;z-index: 1">
+						<!-- <small style="font-size: 50%" class="fragment" data-fragment-index="0">Creating Letter <br>of Credit </small><br> -->
+						<img class="plain" data-fragment-index="0" style="background: transparent; height: 80%; width: 80%;" src="icons/viber image1.jpg"> <br>
+						<button class="ladda-button" data-style="expand-left" data-size="l" style="height: 50px; width:200px; border-radius: 16px;background-color: #86a700"> <small>Reserve</small></button><br>
+						<!-- <small style="font-size: 50%" class="fragment" data-fragment-index="4">Received Goods</small> -->
+					</div>
+					
+				</div>
+			</section>
+			
+
+			<section data-background=#238ac4>
+						<img class="plain" data-fragment-index="0" style="background: transparent; height: 65%; width: 65%;" src="icons/rent.jpg"> <br>
+			</section>
+			<section data-background=#a1a1a1>
+						<img class="plain" data-fragment-index="0" style="background: transparent; height: 65%; width: 65%;" src="icons/rentacar.jpg"> <br>
+			</section>
+
+			<!-- end of how it works -->
+			
+		</section>
+		<section>
+			
+			<section data-background="white">
+				<h2>Market</h2>
+			</section>
+			<section>
+				<div class="twelve columns">
+					<div class="eight columns">
+						<p style="text-align: left;">Market opportunity</p>
+						<small style="text-align: left;">100K Taxi orders daily, which is in absolute values comparable with St. Petersburg, while the population of Yerevan is <span class="fragment highlight-green">5</span> times lower.</small> <br> <br>
+			
+			<ul style="text-align: left;">
+				<small><li class="fragment highlight-current-green">at least 10% of population becomes permanent user</li></small>
+				<small><li class="fragment highlight-current-green">up to 40% of population will try a service</li></small>
+				<small><li class="fragment highlight-current-green">one car-sharing vehicle  replaces 15-20 private cars</li></small>
+			</ul>
+					</div>
+					<div class="four columns" style="float: right;padding-top: 80px;">
+						<img class="plain" data-fragment-index="0" style="background: transparent; height: 100%; width: 100%;" src="icons/market.png">
+							
+					</div>	
+					
+				</div>
+			</section>
+			<section>
+				<h2 style="text-transform: none; text-align: left;">Target Market</h2>
+				<div class="twelve columns">
+					<div class="five columns fragment"; style="float: left;"><img class="plain " data-fragment-index="0" style="background: transparent; height: 100%; width: 100%;" src="icons/man.png"></div>
+				<div class="five columns fragment" style="float: right;"><img class="plain" data-fragment-index="0" style="background: transparent; height: 100%; width: 100%;" src="icons/Woman.png"></div>
+				</div>
+			</section>
+			<!-- <section>
+				<h2>Valuation</h2>
+			</section> -->
+		</section>
+
+		<section>
+			<h2 style="text-transform: none; text-align: left;">Funding</h2>
+			<div class="twelve columns">
+					<div class="five columns fragment"; style="float: left;">
+						<img class="plain" 	data-fragment-index="0" style="background: transparent; height: 80%; width: 80%;" src="icons/20k.png"><br>
+						<small>software solution</small>
+					</div>
+				<div class="five columns fragment" style="float: right;">
+					<img class="plain" data-fragment-index="0" style="background: transparent; height: 80%; width: 80%;" src="icons/150k.png"> <br>
+					<small>full deployment</small>
+				</div>
+			</div>
+
+		</section>
+		<section data-background="white">
+			<h2 style="text-transform: none; text-align: left;">Roadmap</h2>
+			<img class="plain" data-fragment-index="0" style="background: transparent;" src="icons/roadmap.PNG">
+		</section>
+
+		<section>
+			<h2 style="text-transform: none; text-align: left;">The Team</h2>
+			<div class="twelve columns">
+				<div class="four columns" style="margin-top: 100px;">
+					<img class="plain" data-fragment-index="0" style="background: transparent; height: 100px;width: 100px; border-radius: 50%;" src="icons/harut.jpg">	
+					<small> Khachatryan Harutyun</small>
+					<small style="font-size: 50%; font-style: italic;">CEO/Founder</small>
+				</div>
+				<div class="four columns" style="margin-top: 100px;">
+					<img class="plain" data-fragment-index="0" style="background: transparent; height: 100px;width: 100px;border-radius: 50%;" src="icons/karen.jpg">	
+					<small> Hovhannisyan Karen</small> <br>
+					<small style="font-size: 50%; font-style: italic;">Chief Operating Officer</small>
+				</div>
+				<div class="four columns" style="margin-top: 100px;">
+					<img class="plain" data-fragment-index="0" style="background: transparent; height: 100px;width: 100px;border-radius: 50%;" src="icons/hovo.jpg">
+					<small> Khachatryan Hovhannes</small>
+					<small style="font-size: 50%;font-style: italic;">Business Consultant</small>	
+				</div>
+			</div>
+		</section>
+
+			<!-- <section data-background="#dddddd">
+				<h2>What blockchain brings?</h2>
+				<div style="margin-left: 60px;" class="twelve columns">
+					<div class="three columns">
+						<img class=" plain fragment grow" width="100" height="100" style="background: transparent;" src="icons\pear2pear.png"><br>
+						<small class="">Peer-to-Peer</small>
+					</div>
+
+					<div class="three columns">
+
+						<img class=" plain fragment grow" width="100" height="100" style="background: transparent;" src="icons/trustness.png"> <br>
+						<small class="">Trustless</small>
+					</div>
+
+					<div class="three columns">
+
+						<img class=" plain fragment grow" width="100" height="100" style="background: transparent;" src="icons/Reduced_ambiguities.png"> <br>
+						<small class="">Reduced ambiguities</small>
+					</div>
+
+					<div class="three columns">
+
+						<img class=" plain fragment grow" width="100" height="100" style="background: transparent;" src="icons/Exactness.png"> <br>
+						<small class="">Exactness</small>
+					</div>
+
+				</div>
+
+				<div style="margin-top: 100px; margin-left: 60px;" class="twelve columns">
+					<div class="three columns">
+
+						<img class=" plain fragment grow" width="100" height="100" style="background: transparent;" src="https://i2.wp.com/keystonesolutions.com/wp-content/uploads/2017/01/dataintegrity.png?fit=300%2C300&ssl=1"> <br>
+						<small class="">Integrity</small>
+					</div>
+
+					<div class="three columns">
+
+						<img class=" plain fragment grow" width="100" height="100" style="background: transparent;" src="icons\No_documentation.png"> <br>
+						<small class="">No <br>documentation</small>
+					</div>
+
+					<div class="three columns">
+						<img class=" plain fragment grow" width="100" height="100" style="background: transparent;" src="icons/problem_identification.png"> <br>
+
+						<small class="">Problem identification</small>
+					</div>
+
+					<div class="three columns">
+
+						<img class=" plain fragment grow" width="100" height="100" style="background: transparent;" src="https://lh3.googleusercontent.com/NXh6m71aOfh7YRnM7onzAl3KriMVOf_WpKS22bh4NUT3oO3McmhOUhCcLVNQCpTYukw=w300"> <br>
+						<small class="">Multi-signatory mechanism
+						</small>
+					</div>
+				</div>
+
+			</section> -->
+		</section>
+		<!--buttons practical illustration-->	
+		<!--buttons practical illustration-->
+		<section data-background=#322c2c>
+			<small><h1 style="text-transform: none;">Thank <span style="color: #86a700">you!</span></h1></small>
+		</section>
+
+	</div>
+
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script
+		src="https://code.jquery.com/jquery-1.8.0.min.js"
+		integrity="sha256-jFdOCgY5bfpwZLi0YODkqNXQdIxKpm6y5O/fy0baSzE="
+		crossorigin="anonymous"></script>
+
+<script>
+
+	// More info https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		transition: 'slide',
+
+		dependencies: [
+			{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'plugin/search/search.js', async: true },
+			{ src: 'plugin/zoom-js/zoom.js', async: true },
+			{ src: 'plugin/notes/notes.js', async: true }
+		]
+	});
+
+</script>
+
+
+<script src="dist/spin.min.js"></script>
+<script src="dist/ladda.min.js"></script>
+
+<script>
+
+	// Bind progress buttons and simulate loading progress
+	Ladda.bind( '.progress-demo button', {
+		callback: function( instance ) {
+			var progress = 0;
+			var interval = setInterval( function() {
+				progress = Math.min( progress + Math.random() * 0.1, 1 );
+				instance.setProgress( progress );
+
+				if( progress === 1 ) {
+					instance.stop();
+					clearInterval( interval );
+				}
+			}, 200 );
+		}
+	} );
+	$('.loading_ladda').click(function () {
+		$('.progress-demo button').trigger('click');
+	});
+
+
+
+</script>
+
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+</body>
+</html>
